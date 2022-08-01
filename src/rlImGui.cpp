@@ -42,7 +42,7 @@
 #include <map>
 
 #ifndef NO_FONT_AWESOME
-#include "../extras/FA6FreeSolidFontData.h"
+#include "../lib/FontAwesome/FA6FreeSolidFontData.h"
 #endif
 
 static std::vector<Texture> LoadedTextures;
