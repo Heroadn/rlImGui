@@ -7,8 +7,8 @@ This repository is forked from the [original](https://github.com/raylib-extras/r
 rlImgui provides a backend for [Dear ImGui](https://github.com/ocornut/imgui) using [Raylib](https://www.raylib.com/). 
 
 # Building
-rlImGui is setup to use CMake to generate a static library. Optionally, examples can be built as well. 
-rlImGui can be used as a static library, or by directly including the files into your game project.
+This version of rlImGui is setup to use CMake to generate a static library. Optionally, examples can be built 
+as well. rlImGui can be used as a static library, or by directly including the files into your game project.
 
 ## Commands
 
