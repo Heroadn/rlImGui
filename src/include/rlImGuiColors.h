@@ -31,33 +31,12 @@
 #pragma once
 
 #include "raylib.h"
+#include <ImGui/imgui.h>
 
-#ifndef NO_FONT_AWESOME
-#include "extras/IconsFontAwesome6.h"
-#define FONT_AWESOME_ICON_SIZE 11
-#endif
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-// basic API
-void rlImGuiSetup(bool dark);
-void rlImGuiBegin();
-void rlImGuiEnd();
-void rlImGuiShutdown();
-
-// Advanced StartupAPI
-void rlImGuiBeginInitImGui();
-void rlImGuiEndInitImGui();
-void rlImGuiReloadFonts();
-
-// image API
-void rlImGuiImage(const Texture *image);
-bool rlImGuiImageButton(const Texture *image);
-void rlImGuiImageSize(const Texture *image, int width, int height);
-void rlImGuiImageRect(const Texture* image, int destWidth, int destHeight, Rectangle sourceRect);
-
-#ifdef __cplusplus
+namespace rlImGuiColors
+{
+    inline ImVec4 Convert(::Color color)
+    {
+        return ImVec4(color.r / 255.0f, color.g / 255.0f, color.b / 255.0f, color.a / 255.0f);
+    }
 }
-#endif

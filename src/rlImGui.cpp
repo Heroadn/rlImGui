@@ -27,9 +27,9 @@
 *   SOFTWARE.
 *
 **********************************************************************************************/
-#include "rlImGui.h"
+#include "include/rlImGui.h"
 
-#include "imgui.h"
+#include <ImGui/imgui.h>
 #include "raylib.h"
 #include "rlgl.h"
 
@@ -42,7 +42,7 @@
 #include <map>
 
 #ifndef NO_FONT_AWESOME
-#include "extras/FA6FreeSolidFontData.h"
+#include "../extras/FA6FreeSolidFontData.h"
 #endif
 
 static std::vector<Texture> LoadedTextures;

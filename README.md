@@ -2,6 +2,9 @@
 <img align="left" src="https://github.com/raysan5/raylib/raw/master/logo/raylib_logo_animation.gif" width="64">
 A Raylib integration with DearImGui
 
+This repository is forked from the [original](https://github.com/raylib-extras/rlImGui)
+ by [@raylib-extras](https://github.com/raylib-extras).
+
 rlImgui provides a backend for [Dear ImGui](https://github.com/ocornut/imgui) using [Raylib](https://www.raylib.com/). 
 
 # Building

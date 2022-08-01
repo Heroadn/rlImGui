@@ -4,3 +4,9 @@
 [submodule "imgui"]
 	path = imgui
 	url = https://github.com/ocornut/imgui.git
+[submodule "lib/raylib"]
+	path = lib/raylib
+	url = https://github.com/raysan5/raylib.git
+[submodule "lib/ImGui"]
+	path = lib/ImGui
+	url = https://github.com/MolassesLover/ImGui.git
