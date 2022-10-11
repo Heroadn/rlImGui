@@ -7,6 +7,7 @@
 [submodule "lib/raylib"]
 	path = lib/raylib
 	url = https://github.com/raysan5/raylib.git
-[submodule "lib/ImGui"]
-	path = lib/ImGui
-	url = https://github.com/MolassesLover/ImGui.git
+[submodule "lib/imgui"]
+	path = lib/imgui
+	url = https://github.com/eliasdaler/imgui.git
+	branch = cmake
