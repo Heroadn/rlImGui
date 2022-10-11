@@ -13,12 +13,11 @@
 #include "raylib.h"
 #include "raymath.h"
 
-#include <ImGui/imgui.h>
+#include "imgui.h"
 #include "../include/rlImGui.h"
 #include "../include/rlImGuiColors.h"
 
 bool Quit = false;
-
 bool ImGuiDemoOpen = false;
 
 class DocumentWindow
@@ -334,8 +333,8 @@ int main(int argc, char* argv[])
 {
 	// Initialization
 	//--------------------------------------------------------------------------------------
-	int screenWidth = 1900;
-	int screenHeight = 900;
+	int screenWidth = 900;
+	int screenHeight = 600;
 
 	SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT);
 	InitWindow(screenWidth, screenHeight, "raylib-Extras [ImGui] example - ImGui Demo");

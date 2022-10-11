@@ -14,7 +14,7 @@
 #include "raylib.h"
 #include "raymath.h"
 
-#include <ImGui/imgui.h>
+#include "imgui.h"
 #include "../include/rlImGui.h"
 
 int main(int argc, char* argv[])
