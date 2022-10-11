@@ -35,7 +35,7 @@ include_directories(src/include)
 #options
 set(IMGUI_BUILD_EXAMPLES OFF CACHE BOOL "Build Imgui examples" FORCE)
 set(IMGUI_DEMO ON CACHE BOOL "Build imgui_demo.cpp" FORCE)
-set(EXAMPLES ON CACHE BOOL  "Build rlImGui examples." FORCE)
+set(EXAMPLES OFF CACHE BOOL  "Build rlImGui examples." FORCE)
 
 #subdirectories
 add_subdirectory(lib/raylib)
