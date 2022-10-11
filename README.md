@@ -26,23 +26,34 @@ cmake -B bin -DEXAMPLES=ON && cmake --build bin -j$(nproc)
 
 Using rlImGui in your code is very easy. Once you have included the library, or source files for rlImGui and ImGui in your project, simply do the following.
 ```
-#include "rlImGui.h"	// include the API header
+#include "rlImGui/rlImGui.h"	// include the API header
 
-// before your game loop
-rlImGuiSetup(true); 	// sets up ImGui with ether a dark or light default theme
+int main(int argc, char** argv)
+{   
+    int screenWidth = 900;
+    int screenHeight = 600;
 
-// inside your game loop, between BeginDrawing() and EndDrawing()
-rlImGuiBegin();			// starts the ImGui content mode. Make all ImGui calls after this
+    SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT);
+    InitWindow(screenWidth, screenHeight, "raylib-Extras [ImGui] example - ImGui Demo");
 
-rlImGuiEnd();			// ends the ImGui content mode. Make all ImGui calls before this
+    // before your game loop
+    rlImGuiSetup(true); 	// sets up ImGui with ether a dark or light default theme
 
-// after your game loop is over, before you close the window
+    // inside your game loop, between BeginDrawing() and EndDrawing()
+    rlImGuiBegin();			// starts the ImGui content mode. Make all ImGui calls after this
 
-rlImGuiShutdown();		// cleans up ImGui
+    rlImGuiEnd();			// ends the ImGui content mode. Make all ImGui calls before this
+
+    // after your game loop is over, before you close the window
+
+    rlImGuiShutdown();		// cleans up ImGui
+
+    return 0;
+}
 ```
 
 # Examples
-There are two example programs in the examples folder.
+There are three example programs in the examples folder.
 
 ## Simple
 This is the most simple use of ImGui in raylib, it just shows the ImGui demo window.
