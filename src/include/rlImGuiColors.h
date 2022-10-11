@@ -31,7 +31,7 @@
 #pragma once
 
 #include "raylib.h"
-#include <ImGui/imgui.h>
+#include "imgui.h"
 
 namespace rlImGuiColors
 {
